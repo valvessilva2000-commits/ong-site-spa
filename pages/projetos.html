@@ -1,0 +1,58 @@
+<div class="container mx-auto px-6 py-16">
+    <header class="text-center mb-16">
+        <h1 class="text-h1 text-heading">Nossas Frentes de Atuação</h1>
+        <p class="text-lg text-text mt-4 max-w-3xl mx-auto">Conheça os projetos que estão fazendo a diferença e veja como você pode participar.</p>
+    </header>
+
+    <section class="space-y-20">
+        <article id="educacao" class="bg-card p-8 rounded-lg shadow-lg flex flex-col md:flex-row items-center gap-8 scroll-mt-24">
+            <div class="md:w-2/3">
+                <h2 class="text-h2 mt-4 mb-4 text-heading">Educação para Todos</h2>
+                <p class="text-text mb-4">Nosso carro-chefe, o projeto 'Educação para Todos', oferece aulas de reforço escolar, oficinas de artes, música e esportes. Acreditamos que o acesso a uma educação de qualidade é a chave para um futuro mais promissor.</p>
+            </div>
+            <div class="md:w-1/3"><img src="imagens/projeto.png" alt="Crianças em sala de aula" class="rounded-lg w-full shadow-md"></div>
+        </article>
+
+        <article id="saude" class="bg-card p-8 rounded-lg shadow-lg flex flex-col md:flex-row-reverse items-center gap-8 scroll-mt-24">
+            <div class="md:w-2/3">
+                <h2 class="text-h2 mt-4 mb-4 text-heading">Saúde na Comunidade</h2>
+                <p class="text-text mb-4">Levamos atendimento médico e odontológico básico a comunidades remotas, além de promover campanhas de vacinação e educação sanitária. Saúde é dignidade!</p>
+            </div>
+            <div class="md:w-1/3"><img src="imagens/projeto1.png" alt="Profissional de saúde atendendo criança" class="rounded-lg w-full shadow-md"></div>
+        </article>
+
+        <article id="renda" class="bg-card p-8 rounded-lg shadow-lg flex flex-col md:flex-row items-center gap-8 scroll-mt-24">
+            <div class="md:w-2/3">
+                <h2 class="text-h2 mt-4 mb-4 text-heading">Geração de Renda</h2>
+                <p class="text-text mb-4">Capacitamos adultos com cursos profissionalizantes em áreas como corte e costura, culinária e informática, para que possam empreender e conquistar sua independência financeira.</p>
+            </div>
+            <div class="md:w-1/3"><img src="imagens/projeto2.png" alt="Pessoa em um curso de geração de renda" class="rounded-lg w-full shadow-md"></div>
+        </article>
+
+        <aside class="bg-card p-8 rounded-lg shadow-lg"> <h3 class="text-h2 text-center mb-6 text-heading">Participe de um Projeto!</h3>
+            <form action="#" method="POST" class="max-w-2xl mx-auto space-y-6">
+                <div>
+                    <label for="project-name" class="block text-sm font-medium text-text mb-1">Seu Nome Completo</label>
+                    <input type="text" id="project-name" name="project-name" required class="peer w-full p-3 rounded-lg border border-neutral-300 dark:border-neutral-600 bg-background focus:outline-none focus:ring-2 focus:ring-primary-500 invalid:border-feedback-error">
+                    <p class="invisible peer-invalid:visible text-feedback-error text-sm mt-1">Por favor, preencha seu nome.</p>
+                </div>
+                <div>
+                    <label for="project-email" class="block text-sm font-medium text-text mb-1">Seu E-mail</label>
+                    <input type="email" id="project-email" name="project-email" required class="peer w-full p-3 rounded-lg border border-neutral-300 dark:border-neutral-600 bg-background focus:outline-none focus:ring-2 focus:ring-primary-500 invalid:border-feedback-error">
+                    <p class="invisible peer-invalid:visible text-feedback-error text-sm mt-1">Por favor, insira um e-mail válido.</p>
+                </div>
+                <div>
+                    <label for="project-select" class="block text-sm font-medium text-text mb-1">Projeto de Interesse</label>
+                    <select id="project-select" name="project-select" required class="peer w-full p-3 rounded-lg border border-neutral-300 dark:border-neutral-600 bg-background focus:outline-none focus:ring-2 focus:ring-primary-500 invalid:border-feedback-error">
+                        <option value="">Selecione um projeto</option>
+                        <option value="educacao">Educação para Todos</option>
+                        <option value="saude">Saúde na Comunidade</option>
+                        <option value="renda">Geração de Renda</option>
+                    </select>
+                    <p class="invisible peer-invalid:visible text-feedback-error text-sm mt-1">Por favor, selecione um projeto.</p>
+                </div>
+                <button type="submit" class="w-full bg-primary-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-primary-600 transition duration-300">Enviar Inscrição</button>
+            </form>
+        </aside>
+    </section>
+</div>
